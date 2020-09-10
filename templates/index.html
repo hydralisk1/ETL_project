@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Spaceship API Manual</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <h3>How to use Spaceship API</h3>
+        <hr />
+        <ul>
+            <li><a href="/api/v1/past">/api/v1/past</a> - API data for launched rockets in the past1</li>
+            <ul>
+                <li>parameters: org, rocket, success</li>
+                <li>org: Organization name</li>
+                <li>rocket: name of rocket</li>
+                <li>success: True or False</li>
+                <li>Usage: <strong>/api/v1/past?org=spacex&success=true</strong></li>
+            </ul>
+        </ul>
+        <ul>
+            <li><a href="/api/v1/upcoming">/api/v1/upcoming</a> - API data for upcoming rockets</li>
+            <ul>
+                <li>parameters: org, rocket</li>
+                <li>org: Organization name</li>
+                <li>rocket: name of rocket</li>
+                <li>Usage: <strong>/api/v1/upcoming?org=spacex</strong></li>
+            </ul>
+        </ul>
+        <ul>
+            <li><a href="/api/v1/rocket">/api/v1/rocket</a> - API data for rocket data</li>
+            <ul>
+                <li>parameters: mfr, rocket, status</li>
+                <li>mfr: Manufacturer name</li>
+                <li>rocket: name of rocket</li>
+                <li>status: current status of rocket - planned, active or retired</li>
+                <li>Usage: <strong>/api/v1/rocket?mfr=spacex&status=planned</strong></li>
+            </ul>
+        </ul>
+    </body>
+</html>
