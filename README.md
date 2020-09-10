@@ -7,7 +7,7 @@
 * Data collection
   - Data scraped from different three web pages (scrape.py)
   - https://nextspaceflight.com/launches/past/, https://nextspaceflight.com/launches/ and https://nextspaceflight.com/rockets/
-    
+  - Beautifulsoup and splinter used
 
 * Database
   - Stored data to MongoDB (data_into_db.py)
